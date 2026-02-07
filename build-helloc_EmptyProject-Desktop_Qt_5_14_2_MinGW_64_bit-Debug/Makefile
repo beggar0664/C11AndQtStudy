@@ -223,6 +223,7 @@ Makefile: ../helloc_EmptyProject/helloc_EmptyProject.pro ../../ide/5.14.2/mingw7
 		../../ide/5.14.2/mingw73_64/mkspecs/features/qt_config.prf \
 		../../ide/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../ide/5.14.2/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../ide/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../ide/5.14.2/mingw73_64/mkspecs/features/toolchain.prf \
 		../../ide/5.14.2/mingw73_64/mkspecs/features/default_pre.prf \
@@ -251,7 +252,6 @@ Makefile: ../helloc_EmptyProject/helloc_EmptyProject.pro ../../ide/5.14.2/mingw7
 		../../ide/5.14.2/mingw73_64/lib/Qt5Gui.prl \
 		../../ide/5.14.2/mingw73_64/lib/Qt5Core.prl \
 		../../ide/5.14.2/mingw73_64/lib/qtmain.prl \
-		.qmake.stash \
 		../../ide/5.14.2/mingw73_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ../helloc_EmptyProject/helloc_EmptyProject.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 ../../ide/5.14.2/mingw73_64/mkspecs/features/spec_pre.prf:
@@ -407,6 +407,7 @@ Makefile: ../helloc_EmptyProject/helloc_EmptyProject.pro ../../ide/5.14.2/mingw7
 ../../ide/5.14.2/mingw73_64/mkspecs/features/qt_config.prf:
 ../../ide/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../ide/5.14.2/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../ide/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../ide/5.14.2/mingw73_64/mkspecs/features/toolchain.prf:
 ../../ide/5.14.2/mingw73_64/mkspecs/features/default_pre.prf:
@@ -435,7 +436,6 @@ Makefile: ../helloc_EmptyProject/helloc_EmptyProject.pro ../../ide/5.14.2/mingw7
 ../../ide/5.14.2/mingw73_64/lib/Qt5Gui.prl:
 ../../ide/5.14.2/mingw73_64/lib/Qt5Core.prl:
 ../../ide/5.14.2/mingw73_64/lib/qtmain.prl:
-.qmake.stash:
 ../../ide/5.14.2/mingw73_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../helloc_EmptyProject/helloc_EmptyProject.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
