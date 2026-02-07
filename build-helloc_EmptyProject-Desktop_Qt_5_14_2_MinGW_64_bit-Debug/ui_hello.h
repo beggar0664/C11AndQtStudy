@@ -6,36 +6,36 @@
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_HELLO_H //Ô¤´¦ÀíÃüÁî ·ÀÖ¹Í·ÎÄ¼şÖØ¸´°üº¬
-#define UI_HELLO_H //Ô¤´¦ÀíÃüÁî
-//Ä£°æ [ Qt Designer Form ]
+#ifndef UI_HELLO_H //é¢„å¤„ç†å‘½ä»¤ é˜²æ­¢å¤´æ–‡ä»¶é‡å¤åŒ…å«
+#define UI_HELLO_H //é¢„å¤„ç†å‘½ä»¤
+//æ¨¡ç‰ˆ [ Qt Designer Form ]
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 
-QT_BEGIN_NAMESPACE //QT ÃüÃû¿Õ¼ä ¿ªÊ¼ºê
+QT_BEGIN_NAMESPACE //QT å‘½åç©ºé—´ å¼€å§‹å®
 
-class Ui_helloDialog//¶¨Òå Àà£¬ÀàÃûÎª ¶Ô»°¿òÀà¶ÔÏóµÄÃû³ÆÇ°¼Ó "Ui_"×Ö·û
+class Ui_helloDialog//å®šä¹‰ ç±»ï¼Œç±»åä¸º å¯¹è¯æ¡†ç±»å¯¹è±¡çš„åç§°å‰åŠ  "Ui_"å­—ç¬¦
 {
 public:
-    QLabel *label;//QLabel ¶ÔÏóÖ¸Õë£¬¶Ô»°¿ò´°¿Ú Ìí¼ÓµÄ label ¶ÔÏó
+    QLabel *label;//QLabel å¯¹è±¡æŒ‡é’ˆï¼Œå¯¹è¯æ¡†çª—å£ æ·»åŠ çš„ label å¯¹è±¡
 
-    void setupUi(QDialog *helloDialog)//¸Ãº¯ÊıÓÃÀ´ Éú³É½çÃæ, ÒòÎªÑ¡ÔñµÄÄ£°å Ê¹ÓÃµÄÊÇ ¶Ô»°¿ò£¬ËùÒÔº¯Êı²ÎÊıÊÇ QDialog ÀàĞÍ
+    void setupUi(QDialog *helloDialog)//è¯¥å‡½æ•°ç”¨æ¥ ç”Ÿæˆç•Œé¢, å› ä¸ºé€‰æ‹©çš„æ¨¡æ¿ ä½¿ç”¨çš„æ˜¯ å¯¹è¯æ¡†ï¼Œæ‰€ä»¥å‡½æ•°å‚æ•°æ˜¯ QDialog ç±»å‹
     {
         if (helloDialog->objectName().isEmpty())
-            helloDialog->setObjectName(QString::fromUtf8("helloDialog"));//ÉèÖÃ¶Ô»°¿ò µÄ¶ÔÏóÃû³Æ
-        helloDialog->resize(400, 300);// ÉèÖÃ ´°¿Ú´óĞ¡
-        label = new QLabel(helloDialog);//ÔÚ¶Ô»°¿òÉÏ ´´½¨±êÇ©¶ÔÏó
-        label->setObjectName(QString::fromUtf8("label"));//ÉèÖÃ ±êÇ©¶ÔÏó µÄÃû³Æ
-        label->setGeometry(QRect(120, 120, 54, 12));//ÉèÖÃ ±êÇ©¶ÔÏó µÄ´óĞ¡ºÍÎ»ÖÃ
+            helloDialog->setObjectName(QString::fromUtf8("helloDialog"));//è®¾ç½®å¯¹è¯æ¡† çš„å¯¹è±¡åç§°
+        helloDialog->resize(400, 300);// è®¾ç½® çª—å£å¤§å°
+        label = new QLabel(helloDialog);//åœ¨å¯¹è¯æ¡†ä¸Š åˆ›å»ºæ ‡ç­¾å¯¹è±¡
+        label->setObjectName(QString::fromUtf8("label"));//è®¾ç½® æ ‡ç­¾å¯¹è±¡ çš„åç§°
+        label->setGeometry(QRect(120, 120, 54, 12));//è®¾ç½® æ ‡ç­¾å¯¹è±¡ çš„å¤§å°å’Œä½ç½®
 
         retranslateUi(helloDialog);
 
-        QMetaObject::connectSlotsByName(helloDialog);//Ê¹µÃ ´°¿ÚÖĞµÄ²¿¼ş ¿ÉÒÔÊµÏÖ °´¶ÔÏóÃû ½øĞĞĞÅºÅºÍ²Û µÄ¹ØÁª 
+        QMetaObject::connectSlotsByName(helloDialog);//ä½¿å¾— çª—å£ä¸­çš„éƒ¨ä»¶ å¯ä»¥å®ç° æŒ‰å¯¹è±¡å è¿›è¡Œä¿¡å·å’Œæ§½ çš„å…³è” 
     } // setupUi
 
-    void retranslateUi(QDialog *helloDialog)//¶Ô ´°¿ÚÀïµÄ ×Ö·û´®½øĞĞ ±àÂë×ª»» ¹¦ÄÜ
+    void retranslateUi(QDialog *helloDialog)//å¯¹ çª—å£é‡Œçš„ å­—ç¬¦ä¸²è¿›è¡Œ ç¼–ç è½¬æ¢ åŠŸèƒ½
     {
         helloDialog->setWindowTitle(QCoreApplication::translate("helloDialog", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("helloDialog", "hello\344\275\240\345\245\275", nullptr));
@@ -43,10 +43,10 @@ public:
 
 };
 
-namespace Ui {//ÃüÃû¿Õ¼ä
-    class helloDialog: public Ui_helloDialog {};//¶¨Òå helloDialog Àà£¬¼Ì³Ğ×Ô Ui_helloDialog
+namespace Ui {//å‘½åç©ºé—´
+    class helloDialog: public Ui_helloDialog {};//å®šä¹‰ helloDialog ç±»ï¼Œç»§æ‰¿è‡ª Ui_helloDialog
 } // namespace Ui
 
-QT_END_NAMESPACE //QT ÃüÃû¿Õ¼ä ½áÊøºê
+QT_END_NAMESPACE //QT å‘½åç©ºé—´ ç»“æŸå®
 
-#endif // UI_HELLO_H //Ô¤´¦ÀíÃüÁî
+#endif // UI_HELLO_H //é¢„å¤„ç†å‘½ä»¤
