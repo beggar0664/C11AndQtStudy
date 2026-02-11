@@ -11,7 +11,8 @@ class MyWidget : public QWidget
 {
     Q_OBJECT
 public slots:
-    void ShowChildDialog();//右击 Refactor菜单项, 在XX.cpp添加定义
+    //void ShowChildDialog();//右击 Refactor菜单项, 在XX.cpp添加定义
+    void on_ShowChild_clicked();
 public:
     MyWidget(QWidget *parent = nullptr);
     ~MyWidget();
