@@ -1,2 +1,7 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>175.png</file>
+        <file>125819.png</file>
+        <file>125830.png</file>
+    </qresource>
+</RCC>

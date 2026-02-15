@@ -223,6 +223,7 @@ Makefile: ../TextEdit/TextEdit.pro ../../../../ide/5.14.2/mingw73_64/mkspecs/win
 		../../../../ide/5.14.2/mingw73_64/mkspecs/features/qt_config.prf \
 		../../../../ide/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../../../ide/5.14.2/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../ide/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../../../ide/5.14.2/mingw73_64/mkspecs/features/toolchain.prf \
 		../../../../ide/5.14.2/mingw73_64/mkspecs/features/default_pre.prf \
@@ -251,8 +252,8 @@ Makefile: ../TextEdit/TextEdit.pro ../../../../ide/5.14.2/mingw73_64/mkspecs/win
 		../../../../ide/5.14.2/mingw73_64/lib/Qt5Gui.prl \
 		../../../../ide/5.14.2/mingw73_64/lib/Qt5Core.prl \
 		../../../../ide/5.14.2/mingw73_64/lib/qtmain.prl \
-		.qmake.stash \
-		../../../../ide/5.14.2/mingw73_64/mkspecs/features/build_pass.prf
+		../../../../ide/5.14.2/mingw73_64/mkspecs/features/build_pass.prf \
+		../TextEdit/picture/res.qrc
 	$(QMAKE) -o Makefile ../TextEdit/TextEdit.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/spec_pre.prf:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/qdevice.pri:
@@ -407,6 +408,7 @@ Makefile: ../TextEdit/TextEdit.pro ../../../../ide/5.14.2/mingw73_64/mkspecs/win
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/qt_config.prf:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/toolchain.prf:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/default_pre.prf:
@@ -435,8 +437,8 @@ Makefile: ../TextEdit/TextEdit.pro ../../../../ide/5.14.2/mingw73_64/mkspecs/win
 ../../../../ide/5.14.2/mingw73_64/lib/Qt5Gui.prl:
 ../../../../ide/5.14.2/mingw73_64/lib/Qt5Core.prl:
 ../../../../ide/5.14.2/mingw73_64/lib/qtmain.prl:
-.qmake.stash:
 ../../../../ide/5.14.2/mingw73_64/mkspecs/features/build_pass.prf:
+../TextEdit/picture/res.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../TextEdit/TextEdit.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 
