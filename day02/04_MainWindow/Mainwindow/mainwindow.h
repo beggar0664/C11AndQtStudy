@@ -15,7 +15,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actiondock_triggered();
+
+    void on_actionNew_File_triggered();
+
+    void on_action_set_triggered();
+
+    void SLOT_SetText(const QString &string);
+
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H
